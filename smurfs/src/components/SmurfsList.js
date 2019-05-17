@@ -12,6 +12,7 @@ class SmurfsList extends React.Component{
     }
 
     deleteSmurf = (id) => {
+        console.log(id)
         this.props.deleteSmurf(id)
     }
 
@@ -23,7 +24,7 @@ class SmurfsList extends React.Component{
                  <SmurfCard 
                  key={smurf.id} 
                  smurf={smurf} 
-                 deleteSmurf={this.props.deleteSmurf}
+                 deleteSmurf={this.deleteSmurf}
                  />
                  )
              } )}</ul>

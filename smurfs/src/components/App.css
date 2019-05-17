@@ -5,6 +5,7 @@
 .title {
   font-family: 'billabongregular', cursive;
   font-size: 4rem;
+  color: navy;
 }
 
 .main-content-container {
@@ -14,6 +15,7 @@
 h2 {
   font-family: 'billabongregular', cursive;
   font-size: 2.4rem;
+  color: navy;
 }
 
 .add-smurf-form {
@@ -100,7 +102,7 @@ button:hover,
 
 .smurf-card .name {
   font-size: 1.8rem;
-  color: black;
+  color: navy;
   border-bottom: 1px dashed silver;
   margin-bottom: 8px;
   font-family: 'billabongregular', cursive;
@@ -108,9 +110,10 @@ button:hover,
 
 .smurf-card span {
   font-weight: bold;
-  color: silver;
+  color: rgb(131, 131, 131);
 }
 
-.far {
-  color: silver;
+.far, .fas {
+  color: rgb(206, 218, 255);
+  padding: 0 5px;
 }
