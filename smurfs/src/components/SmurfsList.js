@@ -11,8 +11,7 @@ class SmurfsList extends React.Component{
         this.props.getSmurfs();
     }
 
-    deleteSmurf = (id) => {
-        console.log(id)
+    deleteSmurf = (e, id) => {
         this.props.deleteSmurf(id)
     }
 

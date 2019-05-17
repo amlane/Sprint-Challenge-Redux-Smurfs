@@ -22,7 +22,7 @@ class AddSmurfForm extends React.Component{
             age: '',
             height: ''
          })
-         window.location.pathname = "/smurfs";
+         this.props.history.push('/smurfs')
     }
 
     handleInput = e => {
