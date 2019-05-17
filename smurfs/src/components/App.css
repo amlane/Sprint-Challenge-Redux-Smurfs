@@ -2,13 +2,27 @@
   text-align: center;
 }
 
+.title {
+  font-family: 'billabongregular', cursive;
+  font-size: 4rem;
+}
+
 .add-smurf-form {
-  margin: 15px;
+  margin: 15px auto;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid silver;
+  width: 350px;
+  height: 250px;
 }
 
 .add-smurf-form input {
-  margin: 5px;
+  margin: 5px auto;
+  border: none;
+  border-bottom: 1px solid silver;
+  padding: 5px;
+  width: 250px;
 }
 
 .add-smurf-form button {
@@ -23,16 +37,13 @@
   margin: 15px auto;
 }
 
-.smurf-list button {
-  background: none;
-  border: 1px solid rgb(108, 108, 255);
-  padding: 5px 15px;
-  border-radius: 3px;
-  color: rgb(108, 108, 255);
-}
-
 ul, li {
   list-style-type: none;
+}
+
+button:focus,
+input:focus {
+  outline: none;
 }
 
 button:hover {
@@ -40,17 +51,26 @@ button:hover {
 }
 
 .smurf-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 10px auto;
 }
 
 .smurf-card {
-  border: 1px solid;
-  width: 150px;
-  padding: 10px;
+  border: 1px solid silver;
+  width: 200px;
+  margin: 10px;
+  padding: 30px;
+}
+
+.smurf-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .smurf-card li {
-  padding: 5px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid silver;
 }

@@ -5,26 +5,24 @@ import SmurfCard from './SmurfCard';
 
 import { getSmurfs } from '../actions';
 
-const SmurfsList = props => {
-
-    const getSmurfs = e => {
-        e.preventDefault();
-        console.log("clicked")
-        props.getSmurfs();
+class SmurfsList extends React.Component{
+    constructor(props){
+        super(props);
     }
 
+    componentDidMount(){
+        this.props.getSmurfs();
+    }
 
+    render(){
     return (
-        <div>
-        <button onClick={getSmurfs}>Fetch Smurfs</button>
         <div className="smurf-list">
-            
-             <ul>{props.smurfs.map( smurf => {
+             <ul>{this.props.smurfs.map( smurf => {
                  return <SmurfCard smurf={smurf} />
              } )}</ul>
         </div>
-        </div>
     )
+  }
 }
 
 const mapStateToProps = state => ({  
