@@ -7,13 +7,18 @@
   font-size: 4rem;
 }
 
+.main-content-container {
+  display: flex;
+}
+
 h2 {
   font-family: 'billabongregular', cursive;
   font-size: 2.4rem;
 }
 
 .add-smurf-form {
-  margin: 15px auto;
+  margin-left: 175px;
+  margin-top: 40px;
   padding: 15px;
   display: flex;
   flex-direction: column;

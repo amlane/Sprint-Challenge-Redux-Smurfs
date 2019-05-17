@@ -15,8 +15,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="title">ReduxstaSmurfs</h1>
+        <div className="main-content-container">
         <AddSmurfForm />
         <SmurfsList />
+        </div>
       </div>
     );
   }
