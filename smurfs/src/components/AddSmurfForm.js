@@ -59,7 +59,7 @@ class AddSmurfForm extends React.Component{
 }
 
 const mapStateToProps = state => {
-    addingSmurf: state.addingSmurf
+    return {}
 }
 
 export default connect(mapStateToProps, { addSmurf } )(AddSmurfForm);

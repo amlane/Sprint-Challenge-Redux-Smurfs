@@ -6,9 +6,6 @@ import SmurfCard from './SmurfCard';
 import { getSmurfs } from '../actions';
 
 class SmurfsList extends React.Component{
-    constructor(props){
-        super(props);
-    }
 
     componentDidMount(){
         this.props.getSmurfs();
@@ -18,7 +15,7 @@ class SmurfsList extends React.Component{
     return (
         <div className="smurf-list">
              <ul>{this.props.smurfs.map( smurf => {
-                 return <SmurfCard smurf={smurf} />
+                 return <SmurfCard key={smurf.id} smurf={smurf} />
              } )}</ul>
         </div>
     )
