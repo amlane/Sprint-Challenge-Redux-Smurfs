@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+import SmurfCard from './SmurfCard';
+
 import { getSmurfs } from '../actions';
 
 const SmurfsList = props => {
@@ -14,10 +16,9 @@ const SmurfsList = props => {
 
     return (
         <div>
-            <h2>Hello from the Smurfs List!</h2>
             <button onClick={getSmurfs}>Fetch Smurfs</button>
              <p>{props.smurfs.map( smurf => {
-                 return <p>{smurf.name}</p>
+                 return <SmurfCard smurf={smurf} />
              } )}</p>
         </div>
     )
