@@ -23,7 +23,7 @@ class App extends Component {
         </nav>
         <h1 className="title">ReduxstaSmurfs</h1>
         <Route path="/smurfs/form" component={AddSmurfForm} />
-        <Route path="/smurfs" component={SmurfsList} />
+        <Route exact path="/smurfs" component={SmurfsList} />
       </div>
       </Router>
     );
