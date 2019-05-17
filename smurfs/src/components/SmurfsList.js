@@ -7,7 +7,8 @@ const SmurfsList = props => {
 
     const getSmurfs = e => {
         e.preventDefault();
-        this.props.getSmurfs()
+        console.log("clicked")
+        props.getSmurfs();
     }
 
 
@@ -22,7 +23,7 @@ const SmurfsList = props => {
 
 const mapStateToProps = state => ({  
     smurfs: state.smurfs,
-    fetchingSmurfs: this.fetchingSmurfs
+    fetchingSmurfs: state.fetchingSmurfs
 })
 
 export default connect(mapStateToProps, { getSmurfs } )(SmurfsList);
