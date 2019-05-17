@@ -2,7 +2,14 @@
   Be sure to import in all of the action types from `../actions`
 */
 
-import { FETCH_SMURFS_START, FETCH_SMURFS_SUCCESS, ADD_SMURF_START, ADD_SMURF_SUCCESSFUL } from '../actions';
+import { 
+  FETCH_SMURFS_START, 
+  FETCH_SMURFS_SUCCESS, 
+  ADD_SMURF_START, 
+  ADD_SMURF_SUCCESSFUL, 
+  DELETE_SMURF_START,
+  DELETE_SMURF_SUCCESSFUL} 
+  from '../actions';
 
 /*
  Your initial/default state for this project could *Although does not have to* look a lot like this
@@ -20,7 +27,8 @@ const initialState = {
     smurfs: [],
     fetchingSmurfs: false,
     error: "",
-    addingSmurf: false
+    addingSmurf: false,
+    deletingSmurf: false
 }
 
 /*
@@ -59,6 +67,20 @@ function reducer(state = initialState, action){
           error: '',
           smurfs: action.payload
         }
+        case DELETE_SMURF_START:
+          return {
+            ...state,
+            deletingSmurf: true,
+            error: ''
+          }
+        case DELETE_SMURF_SUCCESSFUL: 
+          return {
+            ...state,
+            deletingSmurf: false, 
+            smurfs: state.smurfs.filter( smurf => {
+              return smurf.id !== action.payload
+            } )
+          }
     default:
       return state;
   }

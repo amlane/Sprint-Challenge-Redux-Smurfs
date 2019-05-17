@@ -7,6 +7,11 @@
   font-size: 4rem;
 }
 
+h2 {
+  font-family: 'billabongregular', cursive;
+  font-size: 2.4rem;
+}
+
 .add-smurf-form {
   margin: 15px auto;
   padding: 15px;
@@ -15,7 +20,7 @@
   border: 1px solid silver;
   box-shadow: 0 0 8px silver;
   width: 350px;
-  height: 250px;
+  height: 300px;
   background: white;
 }
 
@@ -49,7 +54,8 @@ input:focus {
   outline: none;
 }
 
-button:hover {
+button:hover,
+.far:hover {
   cursor: pointer;
 }
 
@@ -63,7 +69,7 @@ button:hover {
   box-shadow: 0 0 8px silver;
   width: 200px;
   margin: 10px;
-  padding: 30px;
+  padding: 10px 30px 10px 30px;
   background: white;
 }
 
@@ -77,11 +83,29 @@ button:hover {
   padding: 8px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid silver;
   color: salmon;
+}
+
+.smurf-card li:last-child {
+  border: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -20px;
+}
+
+.smurf-card .name {
+  font-size: 1.8rem;
+  color: black;
+  border-bottom: 1px dashed silver;
+  margin-bottom: 8px;
+  font-family: 'billabongregular', cursive;
 }
 
 .smurf-card span {
   font-weight: bold;
-  color: black;
+  color: silver;
+}
+
+.far {
+  color: silver;
 }
