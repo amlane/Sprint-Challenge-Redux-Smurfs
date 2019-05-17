@@ -18,7 +18,7 @@ class App extends Component {
       <Router>
       <div className="App">
         <nav className="nav-links">
-          <NavLink exact to="/smurfs">Smurfs</NavLink>{' '}
+          <NavLink exact to="/smurfs">Smurfs</NavLink>
           <NavLink to="/smurfs/form">Add Smurf</NavLink>
         </nav>
         <h1 className="title">ReduxstaSmurfs</h1>

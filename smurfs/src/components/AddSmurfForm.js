@@ -22,6 +22,7 @@ class AddSmurfForm extends React.Component{
             age: '',
             height: ''
          })
+         window.location.pathname = "/smurfs";
     }
 
     handleInput = e => {
