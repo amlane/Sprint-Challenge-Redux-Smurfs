@@ -18,12 +18,13 @@ class App extends Component {
       <Router>
       <div className="App">
         <nav className="nav-links">
+         <NavLink exact to="/">Add Smurf</NavLink>
           <NavLink exact to="/smurfs">Smurfs</NavLink>
-          <NavLink to="/smurfs/form">Add Smurf</NavLink>
+
         </nav>
         <h1 className="title">ReduxstaSmurfs</h1>
-        <Route path="/smurfs/form" component={AddSmurfForm} />
-        <Route exact path="/smurfs" component={SmurfsList} />
+        <Route exact path="/" component={AddSmurfForm} />
+        <Route path="/smurfs" component={SmurfsList} />
       </div>
       </Router>
     );

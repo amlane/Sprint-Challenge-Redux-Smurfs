@@ -33,7 +33,6 @@ class AddSmurfForm extends React.Component{
 
     render(){
         return (
-            <div className="form-container">
             <form className="add-smurf-form">
                 <h2>Add a Smurf</h2>
                 <input
@@ -56,7 +55,6 @@ class AddSmurfForm extends React.Component{
                  />
                 <button onClick={this.handleClick}>+</button>
             </form>
-            </div>
         )
     }
 }
