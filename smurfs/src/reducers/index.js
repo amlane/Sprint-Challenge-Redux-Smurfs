@@ -2,6 +2,8 @@
   Be sure to import in all of the action types from `../actions`
 */
 
+import { FETCH_SMURFS_START } from '../actions';
+
 /*
  Your initial/default state for this project could *Although does not have to* look a lot like this
  {
@@ -30,6 +32,12 @@ const initialState = {
 
 function reducer(state = initialState, action){
   switch(action.type){
+    case FETCH_SMURFS_START:
+      return {
+        ...state,
+        error: '',
+        fetchingSmurfs: true
+      }
     default:
       return state;
   }
