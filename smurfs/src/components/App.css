@@ -2,27 +2,35 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.add-smurf-form {
+  margin: 15px;
+  padding: 15px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.add-smurf-form input {
+  margin: 5px;
 }
 
-.App-title {
-  font-size: 1.5em;
+.add-smurf-form button {
+  border-radius: 50%;
+  border: none;
+  height: 35px;
+  width: 35px;
+  background: salmon;
+  color: #FAFAFA;
+  font-size: 25px;
+  display: block;
+  margin: 15px auto;
 }
 
-.App-intro {
-  font-size: large;
+.smurf-list button {
+  background: none;
+  border: 1px solid rgb(108, 108, 255);
+  padding: 5px 15px;
+  border-radius: 3px;
+  color: rgb(108, 108, 255);
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+ul, li {
+  list-style-type: none;
 }
