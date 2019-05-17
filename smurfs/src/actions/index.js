@@ -47,8 +47,8 @@ export const deleteSmurf = id => dispatch => {
     axios
     .delete(`http://localhost:3333/smurfs/${id}`)
     .then(res => {
-      console.log("promise: ", id)
-      dispatch({ type: DELETE_SMURF_SUCCESSFUL, payload: id })
+      console.log("promise: ", id, res)
+      // dispatch({ type: DELETE_SMURF_SUCCESSFUL, payload: id })
     })
     .catch(err => {
       console.log(err)
