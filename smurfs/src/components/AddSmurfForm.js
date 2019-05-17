@@ -15,7 +15,7 @@ class AddSmurfForm extends React.Component{
 
     handleClick = e => {
         e.preventDefault();
-        console.log('clicked')
+        if(!this.state.name || !this.state.age || !this.state.height ) return;
         this.props.addSmurf(this.state);
         this.setState({ 
             name: '',
