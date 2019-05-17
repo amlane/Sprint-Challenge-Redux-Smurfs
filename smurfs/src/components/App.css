@@ -34,3 +34,23 @@
 ul, li {
   list-style-type: none;
 }
+
+button:hover {
+  cursor: pointer;
+}
+
+.smurf-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.smurf-card {
+  border: 1px solid;
+  width: 150px;
+  padding: 10px;
+}
+
+.smurf-card li {
+  padding: 5px;
+}

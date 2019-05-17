@@ -15,11 +15,14 @@ const SmurfsList = props => {
 
 
     return (
+        <div>
+        <button onClick={getSmurfs}>Fetch Smurfs</button>
         <div className="smurf-list">
-            <button onClick={getSmurfs}>Fetch Smurfs</button>
+            
              <ul>{props.smurfs.map( smurf => {
                  return <SmurfCard smurf={smurf} />
              } )}</ul>
+        </div>
         </div>
     )
 }
