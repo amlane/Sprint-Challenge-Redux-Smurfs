@@ -24,8 +24,9 @@ h2 {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  border: 1px solid silver;
-  box-shadow: 0 0 8px silver;
+  border: 1px solid rgb(226, 226, 226);
+  box-shadow: 0 0 8px rgb(226, 226, 226);
+  border-radius: 8px;
   width: 350px;
   height: 300px;
   background: white;
@@ -36,8 +37,9 @@ h2 {
   border: none;
   border-bottom: 1px solid silver;
   padding: 5px;
-  width: 250px;
+  width: 200px;
   background: white;
+  text-align: center;
 }
 
 .add-smurf-form button {
@@ -49,7 +51,7 @@ h2 {
   color: #FAFAFA;
   font-size: 25px;
   display: block;
-  margin: 15px auto;
+  margin: 20px auto;
 }
 
 ul, li {
@@ -72,8 +74,9 @@ button:hover,
 }
 
 .smurf-card {
-  border: 1px solid silver;
-  box-shadow: 0 0 8px silver;
+  border: 1px solid rgb(226, 226, 226);
+  box-shadow: 0 0 8px rgb(226, 226, 226);
+  border-radius: 8px;
   width: 200px;
   margin: 10px;
   padding: 10px 30px 10px 30px;
