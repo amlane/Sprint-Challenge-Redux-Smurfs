@@ -17,9 +17,9 @@ class App extends Component {
     return (
       <Router>
       <div className="App">
-        <nav>
-          <Link to="/smurfs">Smurfs</Link>{' '}
-          <Link to="/smurfs/form">Add Smurf</Link>
+        <nav className="nav-links">
+          <NavLink exact to="/smurfs">Smurfs</NavLink>{' '}
+          <NavLink to="/smurfs/form">Add Smurf</NavLink>
         </nav>
         <h1 className="title">ReduxstaSmurfs</h1>
         <Route path="/smurfs/form" component={AddSmurfForm} />
