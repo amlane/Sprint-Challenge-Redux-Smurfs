@@ -37,6 +37,10 @@ h2 {
   color: navy;
 }
 
+.form-container {
+  height: 100vh;
+}
+
 .add-smurf-form {
   margin: 25px auto;
   padding: 15px;
