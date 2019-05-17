@@ -16,7 +16,9 @@ const SmurfsList = props => {
         <div>
             <h2>Hello from the Smurfs List!</h2>
             <button onClick={getSmurfs}>Fetch Smurfs</button>
-             <p>placeholder for where smurfs will render</p>
+             <p>{props.smurfs.map( smurf => {
+                 return <p>{smurf.name}</p>
+             } )}</p>
         </div>
     )
 }

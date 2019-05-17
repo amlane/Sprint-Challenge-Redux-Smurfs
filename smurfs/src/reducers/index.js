@@ -2,7 +2,7 @@
   Be sure to import in all of the action types from `../actions`
 */
 
-import { FETCH_SMURFS_START } from '../actions';
+import { FETCH_SMURFS_START, FETCH_SMURFS_SUCCESS } from '../actions';
 
 /*
  Your initial/default state for this project could *Although does not have to* look a lot like this
@@ -37,6 +37,13 @@ function reducer(state = initialState, action){
         ...state,
         error: '',
         fetchingSmurfs: true
+      }
+    case FETCH_SMURFS_SUCCESS:
+      return {
+        ...state,
+        error: '',
+        fetchingSmurfs: false,
+        smurfs: action.payload
       }
     default:
       return state;
