@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Loader from 'react-loader-spinner';
 
 import SmurfCard from './SmurfCard';
 
@@ -11,23 +12,26 @@ class SmurfsList extends React.Component{
         this.props.getSmurfs();
     }
 
-    deleteSmurf = (id) => {
-        console.log(id)
+    deleteSmurf = (e, id) => {
         this.props.deleteSmurf(id)
     }
 
     render(){
     return (
         <div className="smurf-list">
-             <ul>{this.props.smurfs.map( smurf => {
-                 return (
-                 <SmurfCard 
-                 key={smurf.id} 
-                 smurf={smurf} 
-                 deleteSmurf={this.deleteSmurf}
-                 />
-                 )
-             } )}</ul>
+            {this.props.fetchingSmurfs ? (
+                <Loader type="Circles" color="navy" height={80} width={80}/>
+            ) : <ul>{this.props.smurfs.map( smurf => {
+                return (
+                <SmurfCard 
+                key={smurf.id} 
+                smurf={smurf} 
+                deleteSmurf={this.deleteSmurf}
+                />
+                )
+            } )}</ul>
+            
+            }
         </div>
     )
   }

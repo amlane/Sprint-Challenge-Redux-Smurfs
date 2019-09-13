@@ -21,8 +21,11 @@ let smurfs = [
   }
 ];
 server.get('/smurfs', (req, res) => {
-  res.json(smurfs);
+  setTimeout(() => {
+    res.json(smurfs);
+  }, 1000);
 });
+
 let smurfId = smurfs.length;
 
 server.post('/smurfs', (req, res) => {
